@@ -15,6 +15,15 @@ class CreateGestionsTable extends Migration
     {
         Schema::create('gestions', function (Blueprint $table) {
             $table->id();
+            $table->string("nom");
+            $table->string("tel");
+            $table->string("source");
+            $table->string("adress");
+            $table->string("produit");
+            $table->float("prix");
+            $table->float("charge");
+            $table->float("benefice");
+            $table->int("delivery");
             $table->timestamps();
         });
     }
